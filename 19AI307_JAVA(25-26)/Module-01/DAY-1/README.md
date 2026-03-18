@@ -35,7 +35,7 @@ To write a Java program to demonstrate the difference between post-decrement and
  ```
 /*
 Program to implement a conditional statement using Java
-Developed by: SANTHOSE AROCKIARAJ 
+Developed by: SANTHOSE AROCKIARAJ J
 RegisterNumber: 212224230248
 */
 ```
