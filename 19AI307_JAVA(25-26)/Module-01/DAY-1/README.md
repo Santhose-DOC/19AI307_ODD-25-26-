@@ -1,54 +1,65 @@
-# Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
+# Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
-<img width="766" height="437" alt="image" src="https://github.com/user-attachments/assets/a0bdf113-c787-4026-b994-8b1489d5ca74" />
+<img width="787" height="431" alt="image" src="https://github.com/user-attachments/assets/b4b21d78-dadc-4089-986d-5e832ca4f289" />
 
 
 ## AIM:
-## To write a java program to get name from the user (String) and print it.
+To write a Java program to simulate this elevator logic for a given floor number.
+
 
 ## ALGORITHM :
-1. Start
-2. Import the required package java.util.Scanner.
-3. Create a class for the program.
-4. Create the main method public static void main(String[] args).
-5. Create a Scanner object to read input from the user.
-6. Display a message asking the user to enter their name.
-7. Read the name entered by the user using nextLine().
-8. Store the name in a String variable.
-9. Print the name using System.out.println().
-10.  Close the Scanner object.
-11. Stop
+```
+1.Start
+2️. Declare an integer variable floor.
+3️. Input the floor number from the user.
+4️. Check if the floor number is divisible by both 3 and 5
+    • If floor % 3 == 0 and floor % 5 == 0 → Print "Skipped"
+5️. Else check if the floor number is divisible by 3 only
+    • If floor % 3 == 0 → Print "Beware!"
+6️. Else check if the floor number is divisible by 5 only
+    • If floor % 5 == 0 → Print "Blessings!"
+7️. Else
+    • Print "Floor {floor}"
+8️. Stop
+```
+
+
 
 
 ## PROGRAM:
 
-## Developed By : SANTHOSE AROCKIARAJ J
-## Register Number : 2122242300248
+## Developed by: B.VIMALRAJ
+## RegisterNumber:  212224230304
 
-## Sourcecode.java:
+
+
+## SOURCE CODE:
 
 ```
-
 import java.util.*;
 public class Main{
     public static void main(String[] args){
-        Scanner in=new Scanner(System.in);
-        String a=in.next();
-        System.out.println("Hello, "+a);
+        Scanner in = new Scanner(System.in);
+        int floor = in.nextInt();
+        if (floor%3==0 && floor%5==0)
+         System.out.println("Skipped");
+        else if(floor%3==0)
+         System.out.println("Beware!");
+        else if (floor%5==0)
+         System.out.println("Blessings!");
+        else
+         System.out.println("Floor "+floor);
     }
 }
-
 ```
-
-
-
-
 
 ## OUTPUT:
 
-<img width="594" height="316" alt="image" src="https://github.com/user-attachments/assets/8b118a76-2149-4155-a064-a825677169b0" />
+<img width="569" height="462" alt="image" src="https://github.com/user-attachments/assets/1cb8849f-a7e4-401c-824f-0a79c45bd1ae" />
+
 
 ## RESULT:
 
-The program was executed Successfully.
+Thus,the program was executed Successfully.
+
