@@ -1,29 +1,30 @@
-# Ex.No:1(E) STRINGS AND MATH FUNCTION
+# Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-
-<img width="545" height="193" alt="image" src="https://github.com/user-attachments/assets/fd6e9d9c-123e-4200-a1ce-148df5388e0b" />
-
+Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car  Assign values to attributes. Print the details of both cars.import java.util.Scanner;
 ## AIM:
-
-To write a Java program to reverse a given string.
+To define a class Car with attributes brand, color, and year; create two objects of the class; assign values to their attributes; and print the details of both cars.
 
 ## ALGORITHM :
+1. Define a class Car with three data members:
 
-```
-1️.Start
-2️. Declare a string variable str.
-3️. Declare another string variable rev and initialize it as an empty string.
-4️. Input the string from the user.
-5️. Find the length of the string.
-6️. Repeat from the last character of the string to the first character:
-    • Add each character to the variable rev.
-7️. Store the reversed characters in rev.
-8️. Print the result as:
-    Reversed string: + rev
-9️. Stop
+     String brand
+     String color
+     int year
+ and a method printDetails() to display these values.
 
-```
+2. In the main() method, create a Scanner object to read user inputs.
+
+3. Create the first object car1 and read its brand, color, and year from the user.
+
+4. Create the second object car2 and read its brand, color, and year.
+
+5. Call printDetails() for car1 to display its information.
+
+6. Call printDetails() for car2 to display its information.
+
+7.Close the scanner and end the program.
+
 
 ## PROGRAM:
 
@@ -32,43 +33,54 @@ To write a Java program to reverse a given string.
 
 
 ## SOURCE CODE:
-
 ```
 import java.util.Scanner;
 
-public class ReverseString {
+class Car {
+    String brand;
+    String color;
+    int year;
 
-    public static String reverse(String str) {
-        String reversed = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed += str.charAt(i);
-        }
-        return reversed;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String input = sc.nextLine();
-
-        String result = reverse(input);
-        System.out.println("Reversed string: " + result);
+    void printDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Color: " + color);
+        System.out.println("Year: " + year);
     }
 }
 
+class prog {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        Car car1 = new Car();
+        car1.brand = scanner.nextLine();
+        car1.color = scanner.nextLine();
+        car1.year = scanner.nextInt();
+        scanner.nextLine();
+
+        
+        Car car2 = new Car();
+        car2.brand = scanner.nextLine();
+        car2.color = scanner.nextLine();
+        car2.year = scanner.nextInt();
+
+        car1.printDetails();
+        car2.printDetails();
+
+        scanner.close();
+    }
+}
 ```
 
 
-
-
-
 ## OUTPUT:
-
-<img width="818" height="399" alt="image" src="https://github.com/user-attachments/assets/0bb03b45-6bdb-4e12-9f87-10d030216cd5" />
+<img width="597" height="685" alt="image" src="https://github.com/user-attachments/assets/05ebe553-f279-4f17-b125-675b4afd47bd" />
 
 
 ## RESULT:
 
 Thus , the program was executed Successfully.
+
 
 
